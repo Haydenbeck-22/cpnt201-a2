@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raster Image Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        srcset="
+          Assets/Images/sm/image1-sm.webp 500w,
+          Assets/Images/lg/image1-lg/webp 1920w
+        "
+        sizes="(max-width: 1920px) 500px, 1024px"
+        src="Assets/Images/md/image1-md.webp"
+        alt="Image 1"
+
+      />
+      <img
+        srcset="
+          Assets/Images/sm/image2-sm.webp 500w,
+          Assets/Images/lg/image2-lg/webp 1920w
+        "
+        sizes="(max-width: 1920px) 500px, 1024px"
+        src="Assets/Images/md/image2-md.webp"
+        alt="Image 2"
+     
+      />
+      <img
+        srcset="
+          Assets/Images/sm/image3-sm.webp 500w,
+          Assets/Images/lg/image3-lg/webp 1920w
+        "
+        sizes="(max-width: 1920px) 500px, 1024px"
+        src="Assets/Images/md/image3-md.webp"
+        alt="Image 3"
+      />
+    </div>
+  </body>
+</html>
